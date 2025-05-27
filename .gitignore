@@ -1,0 +1,13 @@
+.env
+
+.nextcloud/
+# Ignore Nextcloud data directory
+
+.nextcloud_db/
+# Ignore Nextcloud database directory
+
+.nginx/
+# Ignore Nginx configuration files
+
+.searxng/
+# Ignore SearxNG configuration files
