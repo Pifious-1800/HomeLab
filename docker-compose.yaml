@@ -7,7 +7,7 @@ services:
     restart: unless-stopped
     ports:
       - '80:80'
-      - '81:81'  # Interface admin
+      - '81:81'  # Nginx Interface 
       - '443:443'
     environment:
       DB_SQLITE_FILE: "/data/database.sqlite"
@@ -47,3 +47,11 @@ services:
       MYSQL_HOST: nextcloud-db
       NEXTCLOUD_ADMIN_USER: ${NEXTCLOUD_ADMIN_USER}
       NEXTCLOUD_ADMIN_PASSWORD: ${NEXTCLOUD_ADMIN_PASSWORD}
+
+  dashy:
+    image: lissy93/dashy:latest
+    container_name: dashy
+    restart: unless-stopped
+    volumes:
+      - ./dashy:/app/data
+    
