@@ -1,0 +1,2 @@
+# HomeLab
+ My homelab is a self-hosted environment where I run essential services for learning and daily use. It includes a private search engine, Nextcloud for personal cloud storage, and Pi-hole to block ads across the network. I use Cloudflared for secure remote access, Unbound as a local DNS resolver, and Nginx as a reverse proxy. A custom dashboard and Portainer help me monitor and manage all my containers easily.
